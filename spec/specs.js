@@ -3,10 +3,10 @@ describe ('Place', function() {
     var testPlace = new Place("Portland", "Powell's Books");
     expect(testPlace.locationName).to.equal("Portland");
     expect(testPlace.landmarkName).to.equal("Powell's Books");
-    expect(testPlace.dayVisited).to.eql([]);
+    expect(testPlace.timeYearName).to.equal("Spring");
   });
   it("adds the fullInfo method to a contact", function() {
-    var testPlace = new Place("Portland", "Powell's Books");
-    expect(testPlace.fullInfo()).to.equal("Portland, Powell's Books");
+    var testPlace = new Place("Portland", "Powell's Books", "Spring");
+    expect(testPlace.fullInfo()).to.equal("Portland, Powell's Books, Spring");
   });
 });
